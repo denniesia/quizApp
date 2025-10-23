@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main class="quiz" id="main">
+        <header>
+            <h1>Welcome to the Quiz App</h1>
+            <p class="text">Here you can test your knowledge in HTML, CSS and JavaScript.</p>
+            <p class="text1">To proceed please enter your username.</p>
+        </header>
+
+        <main class="main">
+            <section class="introduction">
+                <form id="startForm" >
+                    <div class="field">
+                        <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Enter your username"
+                        minlength="2"
+                        />
+                    </div>
+
+                    <div class="actions">
+                        <button type="button" id="submitBtn" onclick="greeting()">Submit</button>
+                    </div>
+                    
+                    <div class="divider"></div>
+
+                    <div class="greeting">
+                        <p class="text" id="greetingText"></p>
+                    </div>
+                </form>
+            </section>
+
+            <section class="questions">
+                <article class="question-cont">
+                    <p class="number">Question 1</p>
+                    <h2 class="question">
+                        Which HTML element is semantic for marking up the main navigation of a page?
+
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) div element with id = 'nav'
+                        </p>
+                        <p class="answer-text">
+                            B) menu element
+                        </p>
+                        <p class="answer-text">
+                            C) nav element 
+                        </p>
+                        <p class="answer-text">
+                            D) section element
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 2</p>
+                    <h2 class="question">
+                        Which CSS selector targets only direct children of an element?
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) .parent .child
+                        </p>
+                        <p class="answer-text">
+                            B) .parent > .child
+                        </p>
+                        <p class="answer-text">
+                            C) .parent + .child
+                        </p>
+                        <p class="answer-text">
+                            D) .parent ~ .child
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 3</p>
+                    <h2 class="question">
+                        What does event.preventDefault() do in JavaScript?
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) Stops propagation to parent elements
+                        </p>
+                        <p class="answer-text">
+                            B) Prevents the default browser action for the event
+                        </p>
+                        <p class="answer-text">
+                            C) Removes the event listener permanently
+                        </p>
+                        <p class="answer-text">
+                            D) Throws an exception if the event is cancelled
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 4</p>
+                    <h2 class="question">
+                       Which HTML input type should you use for selecting a date (native browser widget)?
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) type="calendar"
+                        </p>
+                        <p class="answer-text">
+                            B) type="date"
+                        </p>
+                        <p class="answer-text">
+                            C) type="datetime"
+                        </p>
+                        <p class="answer-text">
+                            D) type="time-date"
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 5</p>
+                    <h2 class="question">
+                        Given CSS position: absolute inside a parent, the element is positioned relative to:
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) The document root always
+                        </p>
+                        <p class="answer-text">
+                            B) The viewport only
+                        </p>
+                        <p class="answer-text">
+                            C) The element itself 
+                        </p>
+                        <p class="answer-text">
+                            D) The nearest ancestor with non-static position
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 6</p>
+                    <h2 class="question">
+                        Which JavaScript expression correctly creates a shallow copy of array arr?
+
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) let copy = arr;
+                        </p>
+                        <p class="answer-text">
+                            B) let copy = arr.slice();
+                        </p>
+                        <p class="answer-text">
+                            C) let copy = arr.push();
+                        </p>
+                        <p class="answer-text">
+                            D) let copy = arr.join();
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 7</p>
+                    <h2 class="question">
+                       Which CSS property controls spacing inside an element between content and its border?
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) margin
+                        </p>
+                        <p class="answer-text">
+                            B) gap
+                        </p>
+                        <p class="answer-text">
+                            C) padding
+                        </p>
+                        <p class="answer-text">
+                            D) border-spacing
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 8</p>
+                    <h2 class="question">
+                        What will typeof NaN return in JavaScript?
+
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) "NaN"
+                        </p>
+                        <p class="answer-text">
+                            B) "number"
+                        </p>
+                        <p class="answer-text">
+                            C) "undefined"
+                        </p>
+                        <p class="answer-text">
+                            D) "object"
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 9</p>
+                    <h2 class="question">
+                       Which HTML attribute improves accessibility by describing the purpose of an input when a visual label isn't suitable?
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) title
+                        </p>
+                        <p class="answer-text">
+                            B) aria-label
+                        </p>
+                        <p class="answer-text">
+                            C) data-label
+                        </p>
+                        <p class="answer-text">
+                            D) alt
+                        </p>
+                    
+                    </div>
+                </article>
+                <article class="question-cont">
+                    <p class="number">Question 10</p>
+                    <h2 class="question">
+                       Which CSS rule has the highest specificity?
+                    </h2>
+                    <div class="answers-cont">
+                        
+                        <p class="answer-text">
+                            A) #header .nav li a
+                        </p>
+                        <p class="answer-text">
+                            B) .nav a
+                        </p>
+                        <p class="answer-text">
+                            C) a:hover
+                        </p>
+                        <p class="answer-text">
+                            D) div a
+                        </p>
+                    
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+        
+    </main>
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
